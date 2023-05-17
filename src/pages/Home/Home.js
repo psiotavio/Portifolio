@@ -21,46 +21,49 @@ function Home() {
       <HeaderComponent />
 
       <div className="fader">
-        <div className="photo-parallax">
-          <div className="bio">
-            <h1 className="intro">
-              Hi, I'm{' '}
-              <Typical
-                steps={['', 1000, 'Otávio Cunha']}
-                loop={1}
-                wrapper="span"
-                className="highlight"
-              />
-            </h1>
-
-            <h3 className="short-intro">I develop Games, Websites and everything you want.</h3>
-          </div>
-          <div className="atr">
-          <Atropos
-            innerClassName="container"
-            className="atropos-container"
-            activeOffset={60}
-            shadowScale={1.1}
-          >
-            <div className="container-hover">
-              <img
-                className="euPhoto"
-                alt="eu"
-                src={eu}
-                data-atropos-offset="5"
-              />
-              <div className="stars">
-                <img
-                  className="stars1"
-                  alt="stars1"
-                  src={stars1}
-                  data-atropos-offset="-8"
+        <div className="content">
+          <div className="photo-parallax">
+            <div className="bio">
+              <h1 className="intro">
+                Hi, I'm{' '}
+                <Typical
+                  steps={['', 1000, 'Otávio Cunha']}
+                  loop={1}
+                  wrapper="span"
+                  className="highlight"
                 />
-              </div>
+              </h1>
+
+              <h3 className="short-intro">I develop Games, Websites and everything you want.</h3>
             </div>
-          </Atropos>
+            <div className="atr">
+              <Atropos
+                innerClassName="container"
+                className="atropos-container"
+                activeOffset={60}
+                shadowScale={1.1}
+              >
+                <div className="container-hover">
+                  <img
+                    className="euPhoto"
+                    alt="eu"
+                    src={eu}
+                    data-atropos-offset="5"
+                  />
+                  <div className="stars">
+                    <img
+                      className="stars1"
+                      alt="stars1"
+                      src={stars1}
+                      data-atropos-offset="-8"
+                    />
+                  </div>
+                </div>
+              </Atropos>
+            </div>
           </div>
         </div>
+
       </div>
 
       <div className="fader">
@@ -68,7 +71,7 @@ function Home() {
           <div className="content">
             <h4 className="subtitle-overview">INTRODUCTION</h4>
             <h1 className="intro-overview">Overview</h1>
-            <p className="content-overview">I'm a highly dedicated software developer with a passion for taking on new challenges. I thrive on pushing my limits and giving my best to overcome difficult projects. Even though I'm still in the second semester of my software engineering course, I've already completed numerous brilliant projects that demonstrate my excellent skills. My expertise spans across a wide range of programming languages, including Python, C, C++, C#, Java, JavaScript, TypeScript, React, HTML, CSS, SCSS, Unreal Engine 5, and Game Maker.</p>
+            <p className="content-overview">I'm a highly dedicated software developer with a passion for taking on new challenges. I thrive on pushing my limits and giving my best to overcome difficult projects. Even though I'm still in the third semester of my software engineering course, I've already completed numerous brilliant projects that demonstrate my excellent skills. My expertise spans across a wide range of programming languages, including Python, C, C++, C#, Java, JavaScript, TypeScript, React, HTML, CSS, SCSS, Unreal Engine 5, and Game Maker.</p>
           </div>
           <div className="atropos-overview">
             {habilidades.map((habilidade, index) => (
@@ -95,6 +98,20 @@ function Home() {
           </div>
         </div>
       </div>
+
+
+      <div className="fader">
+        <div className="content">
+          <h1 className="title-contact">Contact</h1>
+        </div>
+        </div>
+
+
+
+
+
+
+
     </div>
   );
 }
