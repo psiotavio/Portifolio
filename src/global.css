@@ -1,0 +1,45 @@
+  :root {
+  /* Cores principais */
+  --color-primary: #040615; 
+  --color-secondary: #8d5ef7; 
+  --color-tertiary: #c4c4c4; 
+  --color-quaternary: #6272a4; 
+
+  /* Cores adicionais */
+  --color-quinary: #ffb86c;
+  --color-senary: #50fa7b; 
+  --color-septenary: #e64e60; 
+  --color-octonary: #f8f8f2;
+  --color-nonary: #44475a; 
+  --color-denary: #282a36;
+  }
+  
+  body {
+    overflow-x: hidden;
+    background-color: var(--color-primary);
+  }
+  
+  
+  h1 {
+    letter-spacing: 3px; /* Ajuste o valor conforme necessário */
+  line-height: 1.8; /* Ajuste o valor conforme necessário */
+    font-size: 56px;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--color-secondary);
+  }
+
+  p{
+    letter-spacing: 3px; /* Ajuste o valor conforme necessário */
+  line-height: 1.8; /* Ajuste o valor conforme necessário */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+  }
+
+  h4{
+    letter-spacing: 3px; /* Ajuste o valor conforme necessário */
+  line-height: 1.8; /* Ajuste o valor conforme necessário */
+    color: var(--color-tertiary);
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+  }

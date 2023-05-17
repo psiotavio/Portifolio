@@ -1,0 +1,38 @@
+NA HOME():
+
+SCCS:
+
+
+.fader {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+
+JS:
+
+  useEffect(() => {
+    const faders = document.querySelectorAll(".fader");
+
+    const appearOptions = {
+      threshold: 0, // Altere o valor conforme necessário para controlar quando o efeito deve ser ativado
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+        } else {
+          entry.target.classList.remove("fade-in");
+        }
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  }, []);

@@ -1,0 +1,159 @@
+.euPhoto {
+    width: 30rem;
+    height: auto;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 2; /* Ajusta o z-index para que a imagem fique acima das estrelas */
+  }
+  
+
+
+  .stars1 {
+    width: 30rem;
+    height: auto;
+    position: relative;
+    z-index: 1; /* Ajusta o z-index para que fique atrás da imagem */
+  }
+  
+.bio{
+  width: 630px
+}
+
+.atr{
+  position: relative;
+}
+
+  .container {
+    height: 35rem;
+    background-color: #140e30;
+    border: solid 2px silver;
+    border-radius: 50px;
+    position: relative;
+  }
+  
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: background 0.5s ease;
+    z-index: -1;
+  }
+  
+  .container:hover::before {
+    background: black;
+  }
+  
+  
+.photo-parallax
+{
+    padding-top: 5rem;
+    display: flex;
+    justify-content:center;
+    gap: 5rem;
+    margin: auto;
+}
+
+.intro{
+  text-align: left;
+  color: whitesmoke;
+}
+
+.short-intro{
+    color: var(  --color-tertiary);
+}
+
+.highlight{
+    color: var(--color-secondary);
+}
+
+.overview{
+  flex-direction: column;
+  display: flex;
+  justify-content:center;
+}
+
+.content {
+  margin-bottom:10px;
+  width: 70%;
+  padding: 2rem;
+  margin-left: 18%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-overview{
+  margin-bottom: 15px;
+  color: var(--color-tertiary);
+  width: 70%;
+  font-weight:normal;
+}
+
+.intro-overview{
+  margin: 0;
+  text-align: left;
+  color: white;
+}
+
+.subtitle-overview{
+  margin: 0;
+  color: var(--color-tertiary);
+}
+
+
+.hability{
+  margin-top: 40px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  display: block;
+  height: 120px;
+  width: 120px;
+}
+
+.atropos-overview
+{
+  padding-bottom: 2rem;
+  gap: 50px;
+  justify-content:center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.container-overview {
+  background-color: #140e30;
+  border: solid 2px silver;
+  border-radius: 50px;
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.container-overview::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background 0.5s ease;
+  z-index: -1;
+}
+
+.container-overview:hover::before {
+  background: black;
+}
+
+.hability-content {
+  margin-left: 53px;
+  width: 200px;
+  font-size: 28px;
+  margin-top: 25px;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  white-space: pre-line;
+}

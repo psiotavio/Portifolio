@@ -1,0 +1,12 @@
+.foods{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.grid{
+    width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px; 
+}
