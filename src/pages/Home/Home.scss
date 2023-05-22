@@ -140,11 +140,58 @@
   margin-top: 25px;
   text-align: center;
   font-weight: bolder;
-  color: white;
+  color: rgb(255, 255, 255);
   white-space: pre-line;
 }
 
 /* CONTATO */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  padding: 8px;
+  height: 3rem;
+  width: 40rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.textarea {
+  text-align: initial;
+  margin-bottom: 10px;
+  padding: 8px;
+  height: 20rem;
+  width: 40rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.button {
+  text-align: center;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 15rem;
+  background-color: var(--color-septenary);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button:hover {
+  transition: 0.5s;
+  background-color: #962f3b;
+}
+
+
 
 
 
