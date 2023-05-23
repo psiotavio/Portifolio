@@ -11,6 +11,10 @@ import "atropos/css";
 import "./Home.scss";
 import emailjs from "@emailjs/browser";
 
+import git from "../../assets/icons/git.png";
+import insta from "../../assets/icons/insta.png";
+import linkedin from "../../assets/icons/linkedin.png";
+
 const habilidades = ["Web Developer", "Game Developer", "Software Developer"];
 const icons = [icon1, icon2, icon3];
 
@@ -145,34 +149,64 @@ function Home() {
 
       <div className="fader">
         <div className="content">
-          <h1 className="title-contact">Contact</h1>
-
-          <form className="form" onSubmit={sendEmail}>
-            <input
-              className="input"
-              type="text"
-              placeholder="Name:"
-              onChange={(e) => setName(e.target.value)}
-              value={name}
-            ></input>
-
-            <input
-              className="input"
-              type="text"
-              placeholder="Email:"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-            ></input>
-
-            <input
-              className="textarea"
-              placeholder="Message:"
-              onChange={(e) => setMessage(e.target.value)}
-              value={message}
-            ></input>
-
-            <input className="button" type="submit" value="send"></input>
-          </form>
+          <div className="contact-content">
+            <div className="contact">
+              <h2 className="contact-t">Contact</h2>
+              <p className="p-contact">Tel: +55 (55) 99653-5271</p>
+              <p className="p-contact">otaviocunhaps.profissional@gmail.com</p>
+              <div className="link-buttons">
+                <a
+                  href="https://github.com/psiotavio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img className="links-b" src={git} alt="GitHub" />
+                </a>
+                <a
+                  href="https://www.instagram.com/otavio_cunhap/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img className="links-b" src={insta} alt="Instagram" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/otavio-cunhap"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img  className="links-b" src={linkedin} alt="LinkedIn" />
+                </a>
+              </div>
+            </div>
+            <div className="contact-form">
+              <form className="form" onSubmit={sendEmail}>
+                <input
+                  className="rEindN"
+                  type="text"
+                  placeholder="Name:"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
+                <input
+                  className="rEindN"
+                  type="email"
+                  placeholder="Email:"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <textarea
+                  className="rEindN"
+                  placeholder="Message:"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
+                ></textarea>
+                <input className="button" type="submit" value="Send" />
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>

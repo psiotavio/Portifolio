@@ -1,12 +1,49 @@
-.foods{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.atropos-projects{
+    width: 30rem;
+    height: 18rem ;
 }
 
-.grid{
-    width: 60rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px; 
-}
+.projects-atr {
+    background-image: url(../../assets/games/MrArgon/matrix.png);
+    background-size: cover;
+    border: solid 2px silver;
+    border-radius: 50px;
+    position: relative;
+  }
+
+  .projects-atr:hover{
+   cursor: pointer;
+  }
+
+  .mr {
+    margin-left: 3rem;
+    margin-top: 4rem;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .argon {
+    margin-left: 4rem;
+    margin-top: 8rem;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    gap: 2rem;
+  }
+  
+  .projects > * {
+    flex-basis: calc(33.33% - 2rem);
+  }
+
+  .projects-container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
