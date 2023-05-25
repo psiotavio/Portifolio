@@ -11,9 +11,29 @@
     position: relative;
   }
 
+  .projects-atr-potterdle {
+    background-image: url(../../assets/potterdle.png);
+    background-size: cover;
+    border: solid 2px silver;
+    border-radius: 50px;
+    position: relative;
+  }
+
+  .projects-atr-potterdle:hover{
+    cursor: pointer;
+   }
+
   .projects-atr:hover{
    cursor: pointer;
   }
+
+  .potterdle {
+    text-transform: uppercase;
+    margin-top: 4.5rem;
+    color: orange;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 5);
+  }
+  
 
   .mr {
     margin-left: 3rem;

@@ -53,72 +53,15 @@ function Projects() {
           </Atropos>
 
           <Atropos
-            innerClassName="projects-atr"
+            innerClassName="projects-atr-potterdle"
             className="atropos-projects"
             activeOffset={60}
             shadowScale={1.1}
           >
             <div className="projects-hover">
-              <img
-                className="mr"
-                alt="mrArgon"
-                src={MR}
-                data-atropos-offset="-8"
-              />
-              <img
-                className="argon"
-                alt="mrArgon"
-                src={ARGON}
-                data-atropos-offset="8"
-              />
+              <h1 className="potterdle" data-atropos-offset="8">Potterdle</h1>
             </div>
           </Atropos>
-
-          <Atropos
-            innerClassName="projects-atr"
-            className="atropos-projects"
-            activeOffset={60}
-            shadowScale={1.1}
-          >
-            <div className="projects-hover">
-              <img
-                className="mr"
-                alt="mrArgon"
-                src={MR}
-                data-atropos-offset="-8"
-              />
-              <img
-                className="argon"
-                alt="mrArgon"
-                src={ARGON}
-                data-atropos-offset="8"
-              />
-            </div>
-          </Atropos>
-
-          <Atropos
-            innerClassName="projects-atr"
-            className="atropos-projects"
-            activeOffset={60}
-            shadowScale={1.1}
-          >
-            <div className="projects-hover">
-              <img
-                className="mr"
-                alt="mrArgon"
-                src={MR}
-                data-atropos-offset="-8"
-              />
-              <img
-                className="argon"
-                alt="mrArgon"
-                src={ARGON}
-                data-atropos-offset="8"
-              />
-            </div>
-          </Atropos>
-
-          
         </div>
       </div>
     </div>
