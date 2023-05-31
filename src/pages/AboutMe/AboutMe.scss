@@ -12,3 +12,15 @@
     text-decoration: none;
     color: var(--color-septenary);
 }
+
+.link-buttons-about{
+    transform: scale(1.25);
+    gap: 2.5rem;
+    padding-top: 1.5rem;
+    justify-content: center;
+
+    
+    display: flex;
+    flex-direction: row;
+}
+

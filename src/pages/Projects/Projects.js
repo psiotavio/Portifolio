@@ -54,6 +54,8 @@ function Projects() {
                 data-atropos-offset="8"
               />
             </div>
+            <button data-atropos-offset="-20"
+            className="download">Download</button>
           </Atropos>
 
           <Atropos

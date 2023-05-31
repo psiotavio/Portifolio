@@ -161,6 +161,8 @@
 }
 
 .contact-content{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   padding-right: 6rem;
   flex-direction: row;
   display: flex;
@@ -242,7 +244,7 @@
 
 .link-buttons
 {
-  padding-top: 1rem;
+  padding-top: 1rem; 
   display: flex;
   gap: 2rem;
   flex-direction: row;

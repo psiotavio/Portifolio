@@ -2,6 +2,10 @@ import HeaderComponent from "../../components/header/Header";
 import React from "react";
 import Typical from "react-typical";
 
+import git from "../../assets/icons/git.png";
+import insta from "../../assets/icons/insta.png";
+import linkedin from "../../assets/icons/linkedin.png";
+
 import "./AboutMe.scss";
 
 function AboutMe() {
@@ -76,6 +80,31 @@ function AboutMe() {
           touch.
         </p>
       </section>
+
+      <div className="link-buttons-about">
+        <a
+          href="https://github.com/psiotavio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="links-b" src={git} alt="GitHub" />
+        </a>
+        <a
+          href="https://www.instagram.com/otavio_cunhap/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="links-b" src={insta} alt="Instagram" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/otavio-cunhap"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="links-b" src={linkedin} alt="LinkedIn" />
+        </a>
+      </div>
+      
     </div>
   );
 }
