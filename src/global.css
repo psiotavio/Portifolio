@@ -30,8 +30,9 @@
   }
 
   p{
+    color: var(--color-tertiary);
     letter-spacing: 3px; /* Ajuste o valor conforme necessário */
-  line-height: 1.8; /* Ajuste o valor conforme necessário */
+    line-height: 1.8; /* Ajuste o valor conforme necessário */
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
   }

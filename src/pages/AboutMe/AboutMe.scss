@@ -1,0 +1,14 @@
+.about{
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    text-align: justify;
+}
+
+.links{
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--color-septenary);
+}

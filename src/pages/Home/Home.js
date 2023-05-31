@@ -53,6 +53,28 @@ function Home() {
       );
   }
 
+  const bubbles = [];
+  for (let i = 0; i < 128; i++) {
+    const size = 2 + Math.random() * 4 + "rem";
+    const distance = 6 + Math.random() * 4 + "rem";
+    const position = -5 + Math.random() * 110 + "%";
+    const time = 2 + Math.random() * 2 + "s";
+    const delay = -1 * (2 + Math.random() * 2) + "s";
+
+    bubbles.push(
+      <div
+        className="bubble"
+        style={{
+          "--size": size,
+          "--distance": distance,
+          "--position": position,
+          "--time": time,
+          "--delay": delay,
+        }}
+      ></div>
+    );
+  }
+
   return (
     <div className="app">
       <HeaderComponent />
@@ -174,7 +196,7 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img  className="links-b" src={linkedin} alt="LinkedIn" />
+                  <img className="links-b" src={linkedin} alt="LinkedIn" />
                 </a>
               </div>
             </div>
@@ -209,6 +231,26 @@ function Home() {
           </div>
         </div>
       </div>
+
+      <div className="footer">
+        <div className="bubbles">{bubbles}</div>
+      <svg style={{ position: 'fixed', top: '100vh' }}>
+        <defs>
+          <filter id="blob">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+              result="blob"
+            />
+            {/* <feComposite in="SourceGraphic" in2="blob" operator="atop" /> */}
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    
     </div>
   );
 }

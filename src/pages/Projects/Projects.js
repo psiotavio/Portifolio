@@ -11,6 +11,10 @@ import "./Projects.scss";
 
 function Projects() {
 
+  const potterdlePage = () => {
+    window.location.href = "http://www.potterdle.com.br";
+  }
+
     const handleClick = () => {
         window.location.href = "/";
       };
@@ -57,6 +61,7 @@ function Projects() {
             className="atropos-projects"
             activeOffset={60}
             shadowScale={1.1}
+            onClick={potterdlePage}
           >
             <div className="projects-hover">
               <h1 className="potterdle" data-atropos-offset="8">Potterdle</h1>
