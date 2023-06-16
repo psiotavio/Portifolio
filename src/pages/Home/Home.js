@@ -1,5 +1,4 @@
 import HeaderComponent from "../../components/header/Header";
-import Typical from "react-typical";
 import React, { useState } from "react";
 import Atropos from "atropos/react";
 import eu from "../../assets/Eu1.webp";
@@ -84,13 +83,7 @@ function Home() {
           <div className="photo-parallax">
             <div className="bio">
               <h1 className="intro">
-                Hi, I'm{" "}
-                <Typical
-                  steps={["", 1000, "Otávio Cunha"]}
-                  loop={1}
-                  wrapper="span"
-                  className="highlight"
-                />
+                Hi, I'm Otávio Cunha
               </h1>
 
               <h3 className="short-intro">

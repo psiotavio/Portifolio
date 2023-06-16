@@ -1,6 +1,5 @@
 import HeaderComponent from "../../components/header/Header";
 import React from "react";
-import Typical from "react-typical";
 
 import git from "../../assets/icons/git.png";
 import insta from "../../assets/icons/insta.png";
@@ -13,12 +12,7 @@ function AboutMe() {
     <div className="app">
       <HeaderComponent />
       <h1>
-        <Typical
-          steps={["About me", 1400]}
-          loop={1}
-          wrapper="span"
-          className="highlight"
-        />
+       About me
       </h1>
       <section className="about" id="about">
         <p>

@@ -1,8 +1,7 @@
 import HeaderComponent from "../../components/header/Header";
-import Typical from "react-typical";
 import React, { useState } from "react";
 import Atropos from "atropos/react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import MR from "../../assets/games/MrArgon/MR..png";
 import ARGON from "../../assets/games/MrArgon/ARGON.png";
@@ -10,26 +9,18 @@ import ARGON from "../../assets/games/MrArgon/ARGON.png";
 import "./Projects.scss";
 
 function Projects() {
-
   const potterdlePage = () => {
     window.location.href = "http://www.potterdle.com.br";
-  }
+  };
 
-    const handleClick = () => {
-        window.location.href = "/";
-      };
-      
+  const handleClick = () => {
+    window.location.href = "/";
+  };
+
   return (
     <div className="app">
       <HeaderComponent />
-      <h1>
-        <Typical
-          steps={["", 1000, "Projects"]}
-          loop={1}
-          wrapper="span"
-          className="highlight"
-        />
-      </h1>
+      <h1>Projects</h1>
 
       <div className="projects-container">
         <div className="projects">
@@ -54,8 +45,9 @@ function Projects() {
                 data-atropos-offset="8"
               />
             </div>
-            <button data-atropos-offset="-20"
-            className="download">Download</button>
+            <button data-atropos-offset="-20" className="download">
+              Download
+            </button>
           </Atropos>
 
           <Atropos
@@ -66,7 +58,9 @@ function Projects() {
             onClick={potterdlePage}
           >
             <div className="projects-hover">
-              <h1 className="potterdle" data-atropos-offset="8">Potterdle</h1>
+              <h1 className="potterdle" data-atropos-offset="8">
+                Potterdle
+              </h1>
             </div>
           </Atropos>
         </div>
