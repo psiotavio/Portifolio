@@ -18,6 +18,7 @@ function Projects() {
   };
 
   return (
+   
     <div className="app">
       <HeaderComponent />
       <h1>Projects</h1>

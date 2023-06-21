@@ -44,3 +44,20 @@
     font-weight: lighter;
     font-family: 'Montserrat', sans-serif;
   }
+
+  @media only screen and (max-width: 768px) {
+    /* Ajuste o valor de 768px conforme necessário */
+  
+    body {
+      padding: 10px; /* Adicione espaçamento interno ao body para evitar cortes */
+    }
+  
+    h1 {
+      font-size: 32px; /* Reduza o tamanho da fonte */
+    }
+  
+    p, h4 {
+      font-size: 14px; /* Reduza o tamanho da fonte */
+    }
+  }
+  
