@@ -363,17 +363,19 @@
 @media only screen and (max-width: 600px) {
   .euPhoto {
     width: 100%;
+    max-width: 300px; /* Defina um valor adequado */
     height: auto;
   }
 
   .stars1 {
     width: 100%;
+    max-width: 300px; /* Defina um valor adequado */
     height: auto;
   }
 
   .content {
     width: 100%;
-    margin-left: 0;
+    margin: 0;
     padding: 1rem;
   }
 
