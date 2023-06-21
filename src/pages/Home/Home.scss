@@ -361,6 +361,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  body{
+    overflow-x: hidden;
+  }
   .euPhoto {
     width: 90%;
     max-width: 300px; /* Defina um valor adequado */
