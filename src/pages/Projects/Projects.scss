@@ -1,75 +1,89 @@
-.atropos-projects {
-  height: 15rem;
+.atropos-projects{
+    height: 15rem ;
 }
 
-.projects-atr,
-.projects-atr-potterdle {
-  background-size: cover;
-  border: solid 2px silver;
-  border-radius: 50px;
-  position: relative;
-}
+.projects-atr {
+    background-image: url(../../assets/games/MrArgon/matrix.png);
+    background-size: cover;
+    border: solid 2px silver;
+    border-radius: 50px;
+    position: relative;
+  }
 
-.projects-hover {
-  transform: scale(0.825);
-}
+  .projects-atr-potterdle {
+    background-image: url(../../assets/potterdle.png);
+    background-size: cover;
+    border: solid 2px silver;
+    border-radius: 50px;
+    position: relative;
+  }
 
-.projects-atr-potterdle:hover,
-.projects-atr:hover {
-  cursor: pointer;
-}
+  .projects-hover{
+    transform: scale(0.825);
+  }
 
-.potterdle {
-  text-transform: uppercase;
-  margin-top: 4.2rem;
-  color: orange;
-  text-shadow: 5px 5px 8px rgba(0, 0, 0, 5);
-}
+  .projects-atr-potterdle:hover{
+    cursor: pointer;
+   }
 
-.mr {
-  margin-left: 3rem;
-  margin-top: 2rem;
-  position: absolute;
-  z-index: 2;
-}
+  .projects-atr:hover{
+   cursor: pointer;
+  }
 
-.argon {
-  margin-left: 4rem;
-  margin-top: 6rem;
-  position: absolute;
-  z-index: 2;
-}
+  .potterdle {
+    text-transform: uppercase;
+    margin-top: 4.2rem;
+    color: orange;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 5);
+  }
+  
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%; /* Adjust the width to 100% to fit the mobile screen */
-  gap: 2rem;
-}
+  .mr {
+    margin-left: 3rem;
+    margin-top: 2rem;
+    position: absolute;
+    z-index: 2;
+  }
 
-.projects > * {
-  flex-basis: 100%; /* Adjust the flex-basis to 100% for full width on mobile */
-}
+  .argon {
+    margin-left: 4rem;
+    margin-top: 6rem;
+    position: absolute;
+    z-index: 2;
+  }
 
-.projects-container {
-  display: flex;
-  justify-content: center;
-}
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    gap: 2rem;
+  }
+  
+  .projects > * {
+    flex-basis: calc(33.33% - 2rem);
+  }
 
-.download {
-  font-size: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 11rem;
-  justify-content: center;
-  display: flex;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 0.5s;
-  background-color: var(--color-senary);
-}
+  .projects-container{
+    display: flex;
+    justify-content: center;
+  }
 
-.download:hover {
-  transition: 0.5s;
-  background-color: var(--color-septenary);
-}
+  .download{
+    font-size: 30px;
+    margin-left: 8.9rem;
+    margin-top: 11rem;
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+    background-color: var(--color-senary);
+  }
+
+  .download:hover{
+    transition: 0.5s;
+    background-color: var(--color-septenary);
+  }
+  
+  
+  
