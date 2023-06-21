@@ -360,3 +360,92 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .euPhoto {
+    width: 100%;
+    height: auto;
+  }
+
+  .stars1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .bio {
+    width: 100%;
+  }
+
+  .atr {
+    padding-left: 1rem;
+  }
+
+  .container {
+    height: auto;
+    border-radius: 0;
+  }
+
+  .container::before {
+    content: none;
+  }
+
+  .photo-parallax {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+  }
+
+  .overview {
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-overview {
+    width: 100%;
+  }
+
+  .atropos-overview {
+    flex-direction: column;
+  }
+
+  .container-overview {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .hability-content {
+    margin: 1rem auto;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .title-contact {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+
+  .rEindN,
+  .textarea,
+  .button {
+    width: 100%;
+  }
+}
